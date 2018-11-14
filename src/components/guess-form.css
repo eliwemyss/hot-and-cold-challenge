@@ -1,0 +1,19 @@
+.guessform {
+    text-align: center;
+}
+
+label {
+    padding: 0 10px;
+    font-size: 18px;
+    color: white;
+}
+
+input {
+    width: 50%;
+    max-width: 75px;
+    border: none;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 10px;
+    box-shadow: 0 0 10px 1px #444;
+}
