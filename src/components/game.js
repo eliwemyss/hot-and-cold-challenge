@@ -21,8 +21,8 @@ export default class GameBoard extends React.Component {
         return Math.floor(Math.random()*100) + 1;
     }
 
-    processGuess = (evt) => {
-        evt.preventDefault();
+    processGuess = (event) => {
+        event.preventDefault();
         const guess = this.state.input;
         
         this.setState({input: ''});
@@ -71,7 +71,7 @@ export default class GameBoard extends React.Component {
 
     render() {
         const guessForm = this.state.guessed ? null : 
-            <GuessForm input={this.state.input} onChange={evt => this.updateInput(evt.target.value)} onSubmit={evt => this.processGuess(evt)} />;
+            <GuessForm input={this.state.input} onChange={event => this.updateInput(event.target.value)} onSubmit={event => this.processGuess(event)} />;
 
         return (
             <main>
