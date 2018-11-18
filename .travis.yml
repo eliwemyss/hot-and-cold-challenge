@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: LQYVGA5cJdRceHni5BStzKEN+C1hKSWcDaH/GKhR2lQXcz5pGQry7jsKR9aEYQBgxpu8SPDV1BP1qmLuodc31ATWofo8/DgZfVP5z0s3fiyYMkYiRj1kHhOl7/IK5mqau9FMOh41+ahwU50iYCnCy4ROKOrL2IBweLPg2ZtdZTUtDZilN3AG9UUa1SBq/deG+wKA00RFxukHPPljkZhB6R+Jnke766CnK+VBZKCkclI4jaHwbH4GeV59eCcBrfzIjnG6PF6UAbAPosjjfAYv6rP3NvkI1F3ZGFhA0h83YITfVbnpGpquIsgtwM9dqL3qaLAFb01e3McsZJif+CEFXsLSfpsfe/jaW8GgPASiOzB9QbpZOyHVEFlHMVsGrACaeYsxIlZuzJ3fTJAbWGQj8CgYjBGMDZvyEZjbriHGxKZG1Vf33+uzJCt08qLqDxb2bW1TN+dU2Jv88L2gfWWhCVvyfnVaaaTq9lc0PTRR+nBr7t1KzX5UMBx0P3SMWcLK0nP6N7jVtnKY1EmIVpF/BsO9C0lhVEeIhb/6j8DJWljnJcdfWfeASgZqJyXvwjArc8Enxd5TTQ76OeX28lkwBHUAh6xqKoUiVUdAATnj/ojs4mZc2rkTSxzmq9wKrc1T/X9L924fPSFlU30iQIGTrKhdDvd+Ms1v9a2G5IyQtqE=
+  app: arcane-shore-45343
+  on:
+    repo: eliwemyss/hot-and-cold-challenge
